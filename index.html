@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <script src="./index.js"></script>
+    <title>Decodificador de Texto</title>
+</head>
+<header>
+    <img src="./public/img/aluraLogo.png" class="logo" alt="">
+</header>
+<body>
+    <main>
+            <div class="message">
+                <form action="">
+                    <textarea name="text" id="text" cols="30" rows="10" placeholder="Digite seu texto" value="" ></textarea>
+                </form>
+            </div>
+        </div>
+        <div class="boyImg">
+            <img src="./public/img/image.png" alt="">
+            <h2 id="msgFound"> Nenhuma mensagem encontrada</h2> <br>
+            <p id="textFound">Digite um texto que voce deseja criptografar ou descriptografar</p>
+            <button type="button" onclick="copiar()" class="btnCopy">Copiar</button>
+            <button type="button" onclick="limpar()" class="btnErase">Limpar</button>
+        </div>
+    </main>
+    <footer>
+        <div class="observacao">
+            <p> <img src="./public/img/observation.png" alt=""> Apenas letras minusculas e sem acento</p> 
+        </div>
+        <div class="footerContent"> 
+            <button type="button" onclick="criptografar()" name="" class="btnCripto">Criptografar</button>
+            <button type="button" onclick="desCriptografar()" class="btnDescripto">Descriptografar</button>
+        </div>
+    </footer>
+</body>
+</html>
