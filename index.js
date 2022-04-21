@@ -41,13 +41,14 @@ function desCriptografar() {
 function limpar() {
     document.getElementById("msgFound").innerHTML = "Nenhuma mensagem encontrada!";
     document.getElementById("textFound").innerHTML = "Digite um texto que voce deseja criptografar ou descriptografar"
+    document.getElementById("text").value = ""
 }
 
 function copiar () {
-        var copyText = document.getElementById("textFound").value
+        var copyText = document.getElementById("textFound").innerHTML
         navigator.clipboard.writeText(copyText).then(() => {
             // Alert the user that the action took place.
             // Nobody likes hidden stuff being done under the hood!
-            alert("Copied to clipboard");
+            alert("Mensagem Copiada");
 })
 }
